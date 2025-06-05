@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!--alt syntax for people with disabilities, title syntax to inform people what is the purpose of the icon in navbar-->
+                <div id="logo_style"><a href="index.html"><img src="casanika.png" alt="CasaNika" title="CasaNika" width="105" height="45"></a></div>
+                <a href="index.html" class="navA">About</a>                
+                <a href="index.html"class="navA">Shops</a>
+                <a href="portfolio.html"class="navA">Portfolio</a>
+                <a href="reviews.html"class="navA">Reviews</a>
+                <a href="basket.html"class="navA">Basket</a>
+                <a href="connect.html"class="navA">Connect With Us</a>
+                <!--href with hash only directs in the same page, while href with .html directs to a different page-->                
+            </nav>
+        </header>
+        <main class="connect">
+        <h1>Connect With Us!</h1>
+        <p>Let's keep in touch by filling out the provided form below:</p>
+        
+        <form id="contact" onsubmit="return validatedForm()">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br> <br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Input Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <script src="connect.js"></script>
+        </form>
+        </main>
+
+        <footer>
+          <p>©CasaNika 2025. All rights reserved.</p>  
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <!--alt syntax for people with disabilities, title syntax to inform people what is the purpose of the icon in navbar-->
+                <!--gave the logo an ID to seclude it in the leftmost part of the page-->
+                <div id="logo_style"><a href="index.html"><img src="casanika.png" alt="CasaNika" title="CasaNika" width="105" height="45"></a></div>
+                <a href="index.html" class="navA">About</a>                
+                <a href="shops.html"class="navA">Shops</a>
+                <a href="portfolio.html"class="navA">Portfolio</a>
+                <a href="reviews.html"class="navA">Reviews</a>
+                <a href="connect.html"class="navA">Connect With Us</a>
+                <!--href with hash only directs in the same page, while href with .html directs to a different page-->                
+            </nav>
+        </header>
+
+        <main class="shop">
+        <h1 id="shops">Shop Locations</h1>
+        <h2>Visit Us!</h2> 
+        <!--Line of code below is a copied code when embedding a map in google maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28897.241525045443!2d55.09963810443881!3d25.130443621326457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f153e3609c979%3A0x5945a418a804ac5!2sAtlantis%20-%20The%20Palm!5e0!3m2!1sen!2sae!4v1747437352725!5m2!1sen!2sae" 
+        width="750" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location"><!--group all locations using div to uniformly adjust the spacing in CSS-->
+            <h2>Shop Location 1</h2>
+            <h3>Dubai</h3>
+            <p>View the Images...<br>
+            Image......</p>
+            <!--organizing all the photos in a container using div. Code from chatGPT-->
+                <div class="shops-image">
+                <img src="https://wallup.net/wp-content/uploads/2018/03/19/586318-bakery-bread-photography.jpg" alt="shop 1 image 1" width="300" height="350" img loading="lazy"><!--"lazy" makes the page load faster because it does not load the image immediately, not unless it's near to scrolling in-->
+                <img src="https://thumbs.dreamstime.com/z/cakes-bakery-13866950.jpg" alt="shop 1 image 2" width="300" height="350" img loading="lazy">
+                <img src="https://th.bing.com/th/id/R.301ba6da794d292e9051f984026f6d5e?rik=Qe62FOs9tYATtw&pid=ImgRaw&r=0" alt="shop 1 image 3" width="300" height="350" img loading="lazy">
+            </div>
+        <h2>Shop Location 2</h2>
+        <h3>Sharjah</h3>
+        <p>View the Images...<br>
+            Image......</p>
+             <div class="shops-image">
+                <img src="https://ansainteriors.com/wp-content/uploads/2019/08/bakery-shop-interior-design.jpg" alt="shop 1 image 1" width="300" height="350" img loading="lazy">
+                <img src="https://marketplace.canva.com/EADapNfVwYw/2/0/618w/canva-white-classy-photo-collage-bakery-menu-YzM1FpOrHis.jpg" alt="shop 1 image 2" width="300" height="350" img loading="lazy">
+                <img src="https://i.ytimg.com/vi/fkkDZ3A6bg4/maxresdefault.jpg" alt="shop 1 image 3" width="300" height="350" img loading="lazy">
+            </div>
+        </div>
+        </main>
+
+         <footer>
+          <p>©CasaNika 2025. All rights reserved.</p>  
+        </footer>
+        
+    </body>
+</html>

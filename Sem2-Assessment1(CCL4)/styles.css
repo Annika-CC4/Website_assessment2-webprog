@@ -1,0 +1,106 @@
+* {/*This prevents any unwanted whitespace in the outline of the page*/
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-align: center;
+    background-color: blanchedalmond;}
+
+header{
+    width:100%;
+    padding-bottom: 9%; /*puts a space at the bottom to prevent navigation from overlapping the content*/}
+
+nav{
+    width:100%;
+    display: flex;/*prevents navigation and body from touching when screen size is small*/
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    justify-content: space-around;
+    z-index: 1000;/*prevents elements from overlapping*/}
+
+.navA{
+    padding: 0.5% 0.5%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-left: 8%;
+    justify-content: space-between;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    color:black;}  
+
+.navA:hover{/*hover effect for navigation*/
+    color:#d17842}
+
+#logo_style{
+    margin-right:10%;
+    padding:1%;
+    margin-left:2;}
+
+.main{
+    width:100%;}
+
+iframe{
+    max-width: 100%;
+    height: auto;
+    border-radius: 4%;}
+
+.shops-image img{
+    object-fit: cover;
+    border-radius: 9px;}
+
+.portfolio{/*incharge of th eportfolio's body*/
+    padding-top:0.5%;
+    width:100%;
+    display:flex;
+    justify-content: center;}
+
+.gallery{/*portfolio's images using class*/
+    object-fit: cover;
+    border-radius: 9px;}
+
+.revs{
+    padding:7%;}
+
+footer{
+    margin-top: 0.5%;
+    padding: 0.5%;
+    background-color: #f0eded;
+    font-size: 10px;
+    width:100%;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;}
+
+/*For the connect woth us page using html, js and css*/
+
+form{
+    max-width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding:5%;
+    border-radius: 10%;
+    border: 1.5px solid #373131;}
+
+input, textarea{
+    width: 100%;
+    padding: 5%;
+    margin-top: 3%;
+    margin-bottom: 9%;}
+
+button{
+    padding: 2% 4%;
+    background-color: #d17842;
+    border:none;
+    color:black;
+    font-weight: bold;
+    cursor: pointer;}
+
+
